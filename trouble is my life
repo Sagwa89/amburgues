@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct _endereco {
+    char Bairro [15];
+    char rua [40];
+    int numero;
+    int valor;
+}Endereco;
+
+typedef struct _entrega {
+    Endereco *enderecos;
+}Entrega;
+
+typedef struct _burg {
+    char nome[15];
+    float valor;
+    int adicional;
+    Entrega entregas;
+}Burg;
+
+typedef struct _pedido {
+    Burg burgue [30];
+    Entrega entrega;
+}Pedido;
+
+int main();
+
+Pedido cadastrarPedido(){
+    Burg burguer;
+    int opcao;
+	Pedido novoPedido;
+	printf("Digite o número do lanche para registrar no pedido: ");
+        printf ("1 - X-Burguer - BBF\n");
+        printf ("2 - X-Salada - Saladinha\n");
+        printf ("3 - X-Bacon - De bacon a vida\n");
+        printf ("4 - X-Calabresa - Calabresa na mesa\n");
+        printf ("5 - X-Coração - Coração bandido\n");
+        printf ("6 - X-Costela - Costela pa nois\n");
+        scanf("%d", //atribui essa porra sei la   );
+
+      
